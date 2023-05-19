@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: 'v8.40.0' # Use the sha / tag you want to point at
+    hooks:
+      - id: eslint
+        additional_dependencies:
+          - eslint@^8.28.0
+          - eslint-config-prettier@^8.5.0
+          - eslint-plugin-svelte@^2.26.0
+          - '@typescript-eslint/eslint-plugin@^5.45.0'
+          - '@typescript-eslint/parser@^5.45.0'
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: 'v3.0.0-alpha.9-for-vscode' # Use the sha / tag you want to point at
+    hooks:
+      - id: prettier
+        additional_dependencies:
+          - prettier@^2.8.0
+          - 'prettier-plugin-svelte@^2.8.1'
